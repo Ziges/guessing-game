@@ -8,8 +8,13 @@
 
         event.preventDefault();
 
-        const secretNumber = Math.floor(Math.random() * 22) + 1;
-        console.log(secretNumber);
+            function generateSecretNumber () {
+                const randomNumber = Math.floor(Math.random() * 22) + 1;
+                return randomNumber;
+            }
+
+        const secretNumber = generateSecretNumber();
+
 
         const userGuess = Number(document.getElementById("js-user-guess").value);
         console.log(userGuess);
