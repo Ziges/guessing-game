@@ -17,7 +17,6 @@
         const secretNumber = generateSecretNumber();
         const userGuess = userInput();
 
-
         if (secretNumber === userGuess) {
             window.alert("Awesome! You number " + userGuess + " was correct. You can be named many things, hungry not being one of them.");
         } else if (secretNumber === userGuess + 1 || secretNumber === userGuess - 1) {
